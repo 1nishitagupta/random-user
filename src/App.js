@@ -17,7 +17,7 @@ function App() {
       }
 
     useEffect(() => {
-          console.log("hieeeee");
+        
     
           fetchData();
     }, [])  
