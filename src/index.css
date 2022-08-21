@@ -10,10 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   background: #c597c5;  /* fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #ffc0cb, #800080); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-width: 1300px;
-margin: auto;
+  width: 1300px;
+  margin: auto;
 }
 
 code {
