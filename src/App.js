@@ -28,20 +28,24 @@ function App() {
     <div className="user-info">
       <h1>Random Users</h1>
       {Data[0] && 
-        <>
-        <img src={Data[0].picture.large} alt="" />
-        <p><strong>Name :</strong> {Data[0].name.title} {Data[0].name.first} {Data[0].name.last}</p>
+        <div className="card">
+          <div className="image">
+            <img src={Data[0].picture.large} alt="" />
+          </div>
+          <div className="details">
+            <p><strong>Name :</strong> {Data[0].name.title} {Data[0].name.first} {Data[0].name.last}</p>
 
-        <p><strong>Email :</strong> {Data[0].email}</p>
-        <p><strong>Age :</strong> {Data[0].dob.age}</p>
-        <p><strong>Phone :</strong> {Data[0].phone}</p>
-        <p><strong>Country :</strong> {Data[0].location.country}</p>
-
-        <button onClick={fetchData}>Get Random User</button>
-        </>
+            <p><strong>Email :</strong> {Data[0].email}</p>
+            <p><strong>Age :</strong> {Data[0].dob.age}</p>
+            <p><strong>Phone :</strong> {Data[0].phone}</p>
+            <p><strong>Country :</strong> {Data[0].location.country}</p>
+          </div>
+          
+        </div>
 
 
       }
+      <button onClick={fetchData}>Get Random User</button>  
     </div>
   );
 }

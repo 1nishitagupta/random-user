@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,7 +9,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background: #800080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 1300px;
+margin: auto;
 }
 
 code {
@@ -21,9 +26,38 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Noticia Text', serif;
 }
-.user-info img{
+.user-info .image img{
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.card{
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
+border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card .details{
+  padding: 0 40px;
+}
+
+button{
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+
+}
+
